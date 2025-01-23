@@ -20,6 +20,21 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 20px;
+  display: flex;  /*Good */
+  flex-shrink: 0; /*This was not included in solution. */
+  /*Gap of 16px was included in solution*/
+
+}
+
+.header {
+font-size: larger; /*Good */
+font-weight: bold; /*Good */
+display: flex; /*Good */
+gap: 118px; 
+
+
+
 }
 
 .icon {
@@ -32,7 +47,9 @@ body {
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
+  /*flex-shrink;0 was used in solution */
+  
 }
 
 .close-button {
@@ -44,10 +61,23 @@ body {
   height: 24px;
   width: 24px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items:center;
+  justify-content:center;
   border: 1px solid #eee;
   padding: 0;
+
+}
+
+.top 
+{
+  display: flex;
+  
+  align-items: flex-start;
+  flex-direction: column;
+  flex-shrink: 20;
+  margin-left: 10px;
+  row-gap: 10px;
+
 }
 
 button {
@@ -66,4 +96,8 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.button_control{
+  margin-top: 20px;
 }

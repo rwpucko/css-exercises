@@ -6,12 +6,19 @@ body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
+  
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex; /* good */
+  justify-content: space-between; /* I missed */
+  padding: 8px; /* I missed */
+  
+  
+  
 }
 
 .profile-image {
@@ -20,6 +27,8 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  align-self: center; /* Solution did not include */
+  margin-left: 10px; /* Solution did not include */
 }
 
 .logo {
@@ -35,14 +44,30 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  align-self: center; /* Solution did not include */
+
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  flex-direction: row;
 }
 
 ul {
   list-style-type: none;
+  display: flex; /* Good */
+  gap: 16px; /* Good */
+  align-content: flex-start; /* Solution did not include */
+  padding-left: 15px; /* solution did not include */
+  
+
+
 }
+
+.right-side, .left-side { /* when creating the selector i forgot to combine them since they shared the same */
+  display: flex;
+  margin-right: 8px;
+}
+

@@ -2,28 +2,81 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display:flex; /* Good */
+  flex-direction: column; /* Good */
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px; /* Good */
+  font-weight: 900; /* Good */
+  text-align: center; /* Good */
+  padding-top: 16px; /* Good */
+  /* Solution had as flex display */
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  justify-content: center; /* Good */
+  display: flex; /* Good */
+  align-items: center; /* Good */
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  min-width: 300px;
+  padding: 16px;
+  
+
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex:1;
+  max-height: 300px;
+  margin: 30px;
+  padding: 16px;
+  min-width: 300px;
+  
+
+}
+
+.middle{
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+li {
+  list-style-type: none;
+  padding: 0px;
+  margin-bottom: 10px
+  
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+ul{
+  padding: 0px;
+}
+
+.cards{
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+
 }

@@ -1,15 +1,43 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  /* did not include solution: text-align: center; */
+  text-align: center;
 }
 
 img {
   width: 100px;
   height: 100px;
+  
+  
 }
 
 .title {
   font-size: 36px;
   font-weight: 900;
+  /* display: flex; did not include */
+  /* justify-content: center; did not include */
+  margin-bottom: 32px; /* Good */
+  
+}
+
+.plants_group {
+  gap: 52px; /* gap is a flex property and evaluates a group of flex items. vs margin it isolated to one html elemenet. */
+  display: flex; /* Good */
+  justify-content: center /* Good */
+
+
+}
+
+
+.barberry_container,.chili_container,.pepper_container,.saffron_container {
+  /* margin: 52px; was not uused  - had gap in plant.s group */
+  /* width: 200px; used Max-width no just width */
+  max-width: 200px;
+  
+
+
+  
+
 }
 
 /* do not edit this footer */

@@ -4,7 +4,12 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif; 
+  margin: 0px;
+  display: flex;
+  flex-direction: column; 
+  /* display: flex; Was included in solution - i did add it, but it didn't do anything
+  flex-direction: column; Was included in solution - i did add it, but it didn't do anything */
 }
 
 img {
@@ -16,6 +21,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px; /*  solution included bottom and left padding */
+  margin: 10px; /*  solution did not include margin here */
 }
 
 input {
@@ -23,4 +30,59 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+  margin-top: 5px;
 }
+
+img{
+  margin-bottom: 5px;
+}
+
+li{
+  list-style-type: none; /*  Good */
+ 
+}
+.left-links,.right-links{
+  padding: 0px;
+}
+
+.header, .footer,.left-links,.right-links{
+  display: flex; /*  Good */
+  justify-content: space-between; /*  Good */
+  
+}
+.left-links,.right-links{
+  gap: 15px;
+  
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+ }
+
+ .content
+ {
+ display: flex; /*  Good */
+ align-items: center; /*  Good */
+ justify-content: center; /*  Good */
+ flex-direction: column; /*  Good */
+ /* included gap 16px in soltuoon */
+
+}
+
+ .m-body{
+  display: flex;
+  justify-content: center;
+  flex: 1;  /* included in solution - this is what causes it to FLEX (grow, shrink, automatically)*/
+  
+ }
+
+ .footer{
+background-color:#eeeeee;
+
+ }
+
+ .header,.footer{
+  padding: 10px; /*  Good */
+ }
+ 
